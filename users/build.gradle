@@ -26,7 +26,9 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "org.springframework.boot:spring-boot-starter-web"
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    runtimeOnly "org.postgresql:postgresql:42.2.6"
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
