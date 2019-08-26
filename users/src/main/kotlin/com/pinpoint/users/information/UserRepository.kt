@@ -1,4 +1,4 @@
-package com.pinpoint.users.user
+package com.pinpoint.users.information
 
 import org.springframework.data.repository.CrudRepository
 
