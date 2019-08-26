@@ -1,11 +1,11 @@
 package com.pinpoint.users
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class UsersApplication
+class Main
 
 fun main(args: Array<String>) {
-	runApplication<UsersApplication>(*args)
+    SpringApplication.run(Main::class.java, *args)
 }
