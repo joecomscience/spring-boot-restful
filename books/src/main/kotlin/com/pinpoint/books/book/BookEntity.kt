@@ -1,10 +1,10 @@
-package com.pinpoint.books.details
+package com.pinpoint.books.book
 
 import javax.persistence.*
 
 @Entity
 @Table(name = "books")
-class BookDetail(
+class BookEntity(
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long = 0,
