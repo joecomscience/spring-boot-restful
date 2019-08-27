@@ -14,7 +14,7 @@ class BookService {
     }
 
     fun getBookDetail(id: Long): BookDetail? {
-        val url = "$host/book/$id"
-        return RestTemplate().getForObject(url, BookDetail::class.java)
+        val url = "$host/book/{id}"
+        return RestTemplate().getForObject(url, BookDetail::class.java, id)
     }
 }
