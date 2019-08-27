@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate
 @Service
 class BookService {
 
-    private val host: String = "http://localhost:8081/api"
+    private val host: String = "http://localhost:8801/api"
 
     fun getAllBooks(): Array<String>? {
         val url = "$host/books"

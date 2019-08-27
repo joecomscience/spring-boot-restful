@@ -5,7 +5,7 @@ import org.springframework.web.client.RestTemplate
 
 @Service
 class UserService {
-    private val host: String = "http://localhost:8080/api/{id}"
+    private val host: String = "http://localhost:8803/api/{id}"
 
     fun getCurrentUser(id: Long): UserInfo? {
         return RestTemplate().getForObject(host, UserInfo::class.java, id)
