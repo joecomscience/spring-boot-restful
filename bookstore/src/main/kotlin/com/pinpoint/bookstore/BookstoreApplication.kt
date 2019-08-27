@@ -1,11 +1,11 @@
 package com.pinpoint.bookstore
 
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class Main
+class BookstoreApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(Main::class.java, *args)
+	runApplication<BookstoreApplication>(*args)
 }
